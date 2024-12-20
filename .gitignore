@@ -127,3 +127,4 @@ yarn-error.log*
 # assets
 client/src/assets/Crew_Headhshots
 client/src/modules/crewPersonnel.ts
+client/src/old

@@ -3,7 +3,11 @@ const axios = require("axios");
 const { FMLogin, FMLogout } = require("../modules/FileMakerLoginAndOut");
 const { TimeBlock } = require("../models/timeBlockModels");
 const { Assembly, Equipment } = require("../models/inventoryModels");
-const { encodedCredentials, oDataUrl } = require("../modules/credentials");
+const {
+  encodedCredentials,
+  oDataUrl,
+  fmServer,
+} = require("../modules/credentials");
 
 const ScriptResults = async (req, res) => {
   const { database, script } = req.body;
@@ -94,7 +98,7 @@ const CrewPersonnel = async (req, res) => {
     };
 
     const config = {
-      url: `https://fmp.pse.cloud/fmi/data/v1/databases/${database}/layouts/${layout}/_find`,
+      url: `https://${fmServer}/fmi/data/v1/databases/${database}/layouts/${layout}/_find`,
       method: "POST",
       maxBodyLength: Infinity,
       headers: {

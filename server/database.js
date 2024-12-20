@@ -1,4 +1,4 @@
-const dotenv = require("dotenv").config();
+require("dotenv").config();
 const mongoose = require("mongoose");
 
 const ldb = mongoose.createConnection(process.env.MONGO_URI_LOGISTICS, {
