@@ -87,35 +87,10 @@ A tool for uploading images as **blobs to Azure**, generating links for **associ
 ## **Technology Stack**
 
 - **Authentication:** Microsoft MASAL
-- **Storage:** Azure Blob Storage
+- **Storage:** Azure Blob Storage, MongoDB
 - **Scheduling & Visualization:** Gantt-based interfaces
 - **Asset Management:** Real-time tracking of availability and conflicts
 
----
-
-## **Getting Started**
-
-To set up this project locally:
-
-```sh
-# Clone the repository
-git clone https://github.com/your-repo/logistics-dashboard.git
-cd logistics-dashboard
-
-# Install dependencies
-yarn install  # or npm install
-
-# Start the development server
-yarn start  # or npm start
-```
-
----
-
-## **Contributing**
-
-Pull requests are welcome! Please ensure your code follows project guidelines and includes appropriate documentation.
-
----
 
 ## **License**
 
